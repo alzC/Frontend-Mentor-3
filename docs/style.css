@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 90vh;
+}
+.container {
+	border-radius: 12px;
+	overflow: hidden;
+}
+.container .content-card {
+	display: flex;
+	width: 1440px;
+}
+.content-card .card-one {
+	background: hsl(31, 77%, 52%);
+	height: 65vh;
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 50px;
+	padding-top: 15px;
+}
+.content-card .card-two {
+	background: hsl(184, 100%, 22%);
+	height: 65vh;
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 50px;
+	padding-top: 15px;
+}
+.content-card .card-three {
+	background: hsl(179, 100%, 13%);
+	height: 65vh;
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 50px;
+	padding-top: 15px;
+}
+.content-card .card-one a {
+	transition: 0.5s ease;
+	color: hsl(31, 77%, 52%);
+}
+
+.content-card .card-one a:hover {
+	background: transparent;
+	color: white;
+	border: solid 0.5px white;
+	transition: 0.5s ease;
+}
+.content-card .card-two a {
+	color: hsl(184, 100%, 22%);
+}
+.content-card .card-two a:hover {
+	background: transparent;
+	color: white;
+	border: solid 0.5px white;
+	transition: 0.5s ease;
+}
+.content-card .card-three a {
+	color: hsl(179, 100%, 13%);
+}
+.content-card .card-three a:hover {
+	background: transparent;
+	color: white;
+	border: solid 0.5px white;
+	transition: 0.5s ease;
+}
+h1 {
+	font-size: 45px;
+	color: white;
+	text-transform: uppercase;
+	font-family: "Big Shoulders Display";
+}
+p {
+	font-family: "Lexend Deca";
+	color: white;
+	font-size: 19px;
+	width: 80%;
+}
+.button {
+	width: 175px;
+	border: none;
+	border-radius: 25px;
+}
+a {
+	font-family: "lexend Deca";
+	padding: 19px;
+	text-align: center;
+	background: white;
+	font-size: 18px;
+	width: 100%;
+	text-decoration: none;
+	font-weight: bold;
+}
+@media (max-width: 1440px) {
+	body {
+		height: 150vh;
+		margin: 50px;
+	}
+	.container {
+		display: flex;
+	}
+	.container .content-card {
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.content-card .card-one {
+		border-radius: 15px 15px 0 0;
+	}
+	.content-card .card-three {
+		border-radius: 0 0 15px 15px;
+	}
+}
